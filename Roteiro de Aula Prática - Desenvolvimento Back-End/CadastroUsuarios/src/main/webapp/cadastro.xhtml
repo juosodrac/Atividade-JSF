@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</h:head>
+<h:body>
+    <!-- Container para centralizar o conteúdo -->
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+
+        <h:form class="form-container">
+            <h:outputLabel for="nome" value="Nome completo:" />
+            <h:inputText id="nome" value="#{pessoa.nome}" />
+
+            <h:commandButton value="Cadastrar" action="#{pessoa.adicionarUsuario}" />
+
+            <h3>Usuários cadastrados:</h3>
+            <h:panelGrid columns="1">
+                <h:dataTable value="#{pessoa.usuarios}" var="usuario">
+                    <h:column>
+                        <h:outputText value="#{usuario}" />
+                    </h:column>
+                </h:dataTable>
+            </h:panelGrid>
+        </h:form>
+    </div>
+</h:body>
+</html>

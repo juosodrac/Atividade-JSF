@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Contate-nos</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/Atividade2/css/main.css" />
+</h:head>
+<h:body>
+    <div class="form-container">
+        <h1>Contate-nos</h1>
+        <h3>Preencha todos os dados do formulário que iremos te responder em breve.</h3>
+
+        <h:form>
+            <h:outputLabel for="nome" value="Nome completo:" />
+            <h:inputText id="nome" value="#{formBean.nome}" styleClass="input-field" />
+
+            <h:outputLabel for="email" value="E-mail:" />
+            <h:inputText id="email" value="#{formBean.email}" styleClass="input-field" />
+
+            <h:outputLabel for="telefone" value="Telefone:" />
+            <h:inputText id="telefone" value="#{formBean.telefone}" styleClass="input-field" />
+
+            <h:outputLabel for="assunto" value="Assunto:" />
+            <h:inputText id="assunto" value="#{formBean.assunto}" styleClass="input-field" />
+
+            <h:outputLabel for="mensagem" value="Sua mensagem:" />
+            <h:inputTextarea id="mensagem" value="#{formBean.mensagem}" styleClass="textarea-field" />
+
+            <h:commandButton value="Enviar" action="#{formBean.enviar}" styleClass="enviar-button" />
+        </h:form>
+    </div>
+</h:body>
+
+</html>
