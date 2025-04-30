@@ -30,7 +30,7 @@ Atividade-JSF/
 └── README.md
 ```
 
-## Como Executar Cada Atividade
+## Atividade Realizadas
 
 ## Atividade 1 – Currículo Web (HTML5/CSS3)
 
